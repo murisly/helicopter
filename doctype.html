@@ -4,7 +4,7 @@
     <!--显示标题-->
     <title>base</title>
     <!--用于表示基准地址-->
-    <base href="http://localhost/helicopter/">
+    <!--base href="http://localhost/helicopter/--">
     <!--设定当前页的属性值-->
     <meta charset="utf-8">
     <!--当前页的作者-->
@@ -24,9 +24,80 @@
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <!--关联页面icon-->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <!--defer表示需要在文档加载完后执行-->
+    <script defer type="text/javascript"></script>
 </head>
 <body>
+    <!--相对地址-->
     <a href="doctype.html">home</a>
-    <div id="link">test</div>
+    <!--绝对地址-->
+    <a href="www.baidu.com">百度</a>
+    <!--锚点-->
+    <a href="#id">百度</a>
+
+
+    <div>
+        <!--b 加以凸显强调-->
+        <div><b>强调b</b></div>
+        <!---->
+        <div><em>强调em</em></div>
+        <!--科技术语-->
+        <div><i>科技术语或者外文文献</i></div>
+        <div><s>不准确或者校正</s></div>
+        <div><strong>表示重要的文字</strong></div>
+        <div><u>为文字加下划线</u></div>
+        <div><small>小号字体</small>正常</div>
+        <div>10<sub>下标</sub>, 10<sup>上标</sup></div>
+        <div>换行<br></div>
+    </div>
+    <hr>
+    <div>
+        <div>
+            <code>
+                //code
+                #include<iostream><br>
+                int main() {<br>
+                    return 0;<br>
+                }<br>
+            </code>
+        </div>
+        <div><var>var变量</var></div>
+        <div><samp>程序输出</samp></div>
+        <div><kbd>用户输入</kbd></div>
+    </div>
+    <hr>
+    <div>
+        <div><abbr title="HyperText Markup Language">html</abbr></div>
+        <div><dfn title="123">定义术语</dfn></div>
+        <div><q>引用来自它出的内容</q></div>
+        <div><cite>引用其他作品</cite></div>
+        <div><mark>显示突出文本</mark></div>
+        <div><ins>添加内容</ins></div>
+        <div><del>删除内容</del></div>
+        <time datetime="15:00">3 clock</time>
+    </div>
+    <hr>
+    <div>
+        <div><pre>预先编排 的 
+                     格式</pre></div>
+        <div><blockquote>引用其他处的内容</blockquote></div>
+
+        <ol type="a">
+            <li>有序列表</li>
+            <li>有序</li>
+        </ol>
+        <ul>
+            <li>无序列表</li>
+            <li>无序</li>
+        </ul>
+        <dl>
+            <dt>dt说明表</dt>
+            <dd>dd</dd>
+        </dl>
+    </div>
+    <div>
+        <div><h1>h1标题</h1></div>
+    </div>
 </body>
 </html>
